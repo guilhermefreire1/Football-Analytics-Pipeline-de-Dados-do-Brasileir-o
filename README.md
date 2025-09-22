@@ -5,31 +5,6 @@ Ele implementa um pipeline em camadas (Bronze → Silver → Gold), coleta dados
 
 -------------------------------------------------------------------------------
 
-ESTRUTURA DO PROJETO
-
-football-analytics/
-│── config/                     # Configurações do projeto (API Key, URL base)
-│   └── settings.py
-│
-│── data/                        # Camadas do pipeline
-│   ├── bronze/                  # Dados crus (JSON da API)
-│   ├── silver/                  # Dados tratados (CSV tabular)
-│   └── gold/                    # Métricas finais (classificação dos times)
-│
-│── dashboard/                   # Dashboard em Streamlit
-│   └── app.py
-│
-│── scripts/                     # Scripts ETL
-│   ├── bronze_ingest.py         # Coleta da API → Bronze
-│   ├── silver_transform.py      # JSON bruto → CSV tabular (Silver)
-│   ├── gold_metrics.py          # KPIs e métricas finais (Gold)
-│
-│── run_pipeline.py              # Executa Bronze + Silver + Gold + Dashboard
-│── requirements.txt             # Dependências
-│── README.md                    # Documentação
-
--------------------------------------------------------------------------------
-
 CONFIGURAÇÃO DA API
 
 1. Crie uma conta gratuita em https://www.football-data.org/
