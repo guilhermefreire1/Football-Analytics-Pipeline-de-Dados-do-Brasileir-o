@@ -60,14 +60,6 @@ O dashboard exibe:
 - Saldo de gols por time
 - Taxa de vitórias (%)
 
-Exemplo de tabela de classificação:
-
-Time       Pontos  Vitórias  Empates  Derrotas  Gols Pró  Gols Contra  Saldo  Aproveitamento
-Flamengo   15      5         0        0         12        3            +9     100%
-Palmeiras  10      3         1        1         9         5            +4     66,6%
-
--------------------------------------------------------------------------------
-
 FUTURAS MELHORIAS
 
 - Adicionar evolução rodada a rodada (gráficos de linha)
