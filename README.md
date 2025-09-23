@@ -70,6 +70,16 @@ FUTURAS MELHORIAS
 
 -------------------------------------------------------------------------------
 
+ARQUITETURA DA PIPELINE
+
+flowchart TD
+    A[Football Data API] --> B[Bronze - JSON cru]
+    B --> C[Silver - CSV limpo]
+    C --> D[Gold - Métricas]
+    D -->|Classificação dos times| E[Dashboard Streamlit]
+    D -->|Ranking de artilheiros| E
+
+
 AUTOR
 
 Projeto desenvolvido por Guilherme Henrique
