@@ -72,12 +72,36 @@ FUTURAS MELHORIAS
 
 ARQUITETURA DA PIPELINE
 
-flowchart TD
-    A[Football Data API] --> B[Bronze - JSON cru]
-    B --> C[Silver - CSV limpo]
-    C --> D[Gold - Métricas]
-    D -->|Classificação dos times| E[Dashboard Streamlit]
-    D -->|Ranking de artilheiros| E
+          ┌───────────────┐
+          │   Football    │
+          │   Data API    │
+          └───────┬───────┘
+                  │
+                  ▼
+          ┌───────────────┐
+          │   Bronze      │
+          │ (JSON cru)    │
+          └───────┬───────┘
+                  │
+                  ▼
+          ┌───────────────┐
+          │   Silver      │
+          │ (CSV limpo)   │
+          └───────┬───────┘
+                  │
+                  ▼
+        ┌──────────────────────┐
+        │        Gold          │
+        │  - Classificação     │
+        │  - KPIs dos times    │
+        │  - Artilheiros       │
+        └─────────┬────────────┘
+                  │
+                  ▼
+          ┌───────────────┐
+          │   Dashboard   │
+          │ (Streamlit)   │
+          └───────────────┘
 
 
 AUTOR
